@@ -20,13 +20,18 @@ exit;
         //判断是否有登录标记
         if(!isset($_SESSION['name'])){
             //没有登录标记,跳转至登录页面
-            message('请先登录','index.php?a=login');
+            message('请先登录','login');
         }
     }
 
-    //加载静态页
+    //后台加载静态页
     function view($name){
         include('./view/admin/'.$name.'.html');
+    }
+
+    //前台加载静态页
+    function template($name){
+        include('./view/index/'.$name.'.html');
     }
 
     //开启session

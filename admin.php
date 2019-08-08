@@ -1,5 +1,5 @@
 <?php
-    // 入口文件
+    // 后台入口文件
     //定义常量
     define('ADMIN','admin.php');
     // 项目初始化(session、加载函数库)
