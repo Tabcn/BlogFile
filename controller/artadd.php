@@ -1,0 +1,2 @@
+<?php
+    view('post-add');
