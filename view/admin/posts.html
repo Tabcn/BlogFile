@@ -17,7 +17,7 @@
     <div class="container-fluid">
       <div class="page-title">
         <h1>所有文章</h1>
-        <a href="index.php?a=artadd" class="btn btn-primary btn-xs">写文章</a>
+        <a href="<?=ADMIN?>?a=artadd" class="btn btn-primary btn-xs">写文章</a>
       </div>
       <!-- 有错误信息时展示 -->
       <!-- <div class="alert alert-danger">
@@ -46,7 +46,7 @@
           <li><a href="#">下一页</a></li>
         </ul>
       </div>
-      <form onsubmit="return confirm('确定要删除吗？')" method="POST" action="index.php?a=artdelmore">
+      <form onsubmit="return confirm('确定要删除吗？')" method="POST" action="<?=ADMIN?>?a=artdelmore">
       <table class="table table-striped table-bordered table-hover">
         <thead>
           <tr>
@@ -69,8 +69,8 @@
             <td class="text-center">2016/10/07</td>
             <td class="text-center">已发布</td>
             <td class="text-center">
-              <a href="index.php?a=artedit&title=<?php echo $v; ?>" class="btn btn-default btn-xs">编辑</a>
-              <a href="index.php?a=artdel&title=<?php echo $v; ?>" class="btn btn-danger btn-xs" onclick="return confirm('确定要删除吗？')">删除</a>
+              <a href="<?=ADMIN?>?a=artedit&title=<?php echo $v; ?>" class="btn btn-default btn-xs">编辑</a>
+              <a href="<?=ADMIN?>?a=artdel&title=<?php echo $v; ?>" class="btn btn-danger btn-xs" onclick="return confirm('确定要删除吗？')">删除</a>
             </td>
           </tr>
           <?php endforeach;?>

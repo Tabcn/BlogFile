@@ -11,5 +11,5 @@
     rename('./data/arts/'.$oldtitle,'./data/arts/'.$title);
 
     //跳转
-    message('修改成功','index.php?a=artlist');
+    message('修改成功','artlist');
 

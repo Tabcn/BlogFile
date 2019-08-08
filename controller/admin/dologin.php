@@ -16,8 +16,8 @@
                 //保存登录信息
                 $_SESSION['name']=$username;
                 //跳转后台首页
-                message('登录成功','index.php');
+                message('登录成功','');
             }
     }
 
-    message('账号或密码错误','index.php?a=login');
+    message('账号或密码错误','login');

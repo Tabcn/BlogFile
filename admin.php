@@ -1,12 +1,13 @@
 <?php
     // 入口文件
+    //定义常量
+    define('ADMIN','admin.php');
     // 项目初始化(session、加载函数库)
     include('./functions.php');
     startSession();
 
     //接收请求，默认是main页面
-    $action = isset($_GET['a'])?$_GET['a']:'main';
-
+    $action = !empty($_GET['a'])?$_GET['a']:'main';
     //无需登录验证的白名单
     $white = ['login','dologin'];
     if(!in_array($action,$white)){
@@ -15,4 +16,4 @@
     }
 
     // 加载相应功能模块
-    include('./controller/'.$action.'.php');
+    include('./controller/admin/'.$action.'.php');

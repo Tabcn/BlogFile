@@ -1,6 +1,7 @@
 <?php
     //提示消息并跳转
     function message($msg,$url){
+        $url=ADMIN.'?a='.$url; 
         echo <<<JS
     <script>
         alert('{$msg}');
